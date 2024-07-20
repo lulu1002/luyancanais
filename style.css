@@ -10,11 +10,15 @@ body {
   justify-content: center;
   color: brown;
 }
+.cabecario a {
+    color: brown;
+}
+
 
 .cabecario :hover {
-    background-color: white;
+    
     border-radius: 20%;
-    color: black;
+    color: rgb(44, 33, 201);
 }
 
 .cabecario2 {
@@ -29,7 +33,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 120px;
-    justify-content: space-between;
+    justify-content: space-between
     margin-left: 10px;
     margin-right: 10px;
     
@@ -41,11 +45,11 @@ body {
 
 .linha2 img:hover{
     color: rgb(252, 8, 8);
-    border: solid 10px
+    border: solid 5px
     
 }
 .linha1 img {
-    width: 200px;
+    width: 300px;
     height: 200px;
 }
 

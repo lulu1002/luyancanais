@@ -2,16 +2,24 @@ body {
     background-color: black;
     color: white;
     font-size: 50px;
-    margin: 50px;
+    
+    
 }
 
 .cabecario {
   display: flex;
   justify-content: center;
   color: brown;
+  
 }
 .cabecario a {
+    display: flex;
     color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+.cabecario2 h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -41,11 +49,13 @@ body {
 .linha1 img:hover{
     color: brown;
     border: solid 3px
+    
 }
 
 .linha2 img:hover{
     color: rgb(252, 8, 8);
     border: solid 5px
+    
     
 }
 .linha1 img {
@@ -109,5 +119,30 @@ body {
 .linha2 img {
     border: solid;
     border-color: white;
+    border-radius: 8%;
     
+    
+}
+
+.subtitulodaimagem2 a {
+    text-decoration: none;
+   text-transform: uppercase;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.linha2 {
+    border-radius: 2px;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+    
+}
+
+.botoes img {
+    border-radius: 10%;
+      
 }

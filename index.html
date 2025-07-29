@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Canais Futebol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="sidebar hidden" id="sidebar">
+    <div class="menu">
+      <button  onclick="toggleSidebar1()">premiere</button>
+      <button  onclick="toggleSidebar2()">sportv</button>
+      <button  onclick="toggleSidebar3()">espn</button>
+    </div>
+  </div>
+  <div class="sidebar hidden" id="sidebar1">
+    <div class="menu">
+      <button id="voltar1" onclick="hideAllSidebars()">Voltar</button>
+      <a onclick="loadPage('https://embedcanaistv.com/premiereclubes/')">premiere 1</a>
+      <a onclick="loadPage('https://embedcanaistv.com/premiere2/')">premiere 2</a>
+      <a onclick="loadPage('https://embedcanaistv.com/premiere3/')">premiere 3</a>
+      <a onclick="loadPage('https://embedcanaistv.com/premiere4/')">premiere 4</a>
+      <a onclick="loadPage('https://embedcanaistv.com/premiere5/')">premiere 5</a>
+      <a onclick="loadPage('https://embedcanaistv.com/premiere6/')">premiere 6</a>
+      <a onclick="loadPage('https://embedcanaistv.com/premiere7/')">premiere 7</a>
+      <a onclick="loadPage('https://embedcanaistv.com/premiere8/')">premiere 8</a>
+    </div>
+  </div>
+  <div class="sidebar hidden" id="sidebar2">
+    <div class="menu">
+      <button id="voltar2" onclick="hideAllSidebars()">Voltar</button>
+      <a onclick="loadPage('https://embedcanaistv.com/sportv/')">sportv 1</a>
+      <a onclick="loadPage('https://embedcanaistv.com/sportv2/')">sportv 2</a>
+      <a onclick="loadPage('https://embedcanaistv.com/sportv3/')">sportv 3</a>
+    </div>
+  </div>
+  <div class="sidebar hidden" id="sidebar3">
+    <div class="menu">
+      <button id="voltar3" onclick="hideAllSidebars()">Voltar</button>
+      <a onclick="loadPage('https://embedcanaistv.com/espn/')">espn 1</a>
+      <a onclick="loadPage('https://embedcanaistv.com/espn2/')">espn 2</a>
+      <a onclick="loadPage('https://embedcanaistv.com/espn3/')">espn 3</a>
+      <a onclick="loadPage('https://embedcanaistv.com/espn4/')">espn 4</a>
+      <a onclick="loadPage('https://embedcanaistv.com/espn5/')">espn 5</a>
+      <a onclick="loadPage('https://embedcanaistv.com/espn6/')">espn 6</a>
+
+    </div>
+  </div>
+
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+  <div class="content full" id="content">
+    <iframe allow="fullscreen" allow="autoplay; encrypted-media" id="webview" src=""></iframe>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const content = document.getElementById("content");
+
+      sidebar.classList.toggle("hidden");
+      content.classList.toggle("full");
+
+
+
+    }
+    function toggleSidebar1() {
+      const sidebar1 = document.getElementById("sidebar1");
+      const content = document.getElementById("content");
+
+      sidebar1.classList.toggle("hidden");
+      content.classList.toggle("full");
+
+    }
+    function toggleSidebar2() {
+      const sidebar2 = document.getElementById("sidebar2");
+      const content = document.getElementById("content");
+
+      sidebar2.classList.toggle("hidden");
+      content.classList.toggle("full");
+    }
+    function toggleSidebar3() {
+      const sidebar3 = document.getElementById("sidebar3");
+      const content = document.getElementById("content");
+
+      sidebar3.classList.toggle("hidden");
+      content.classList.toggle("full");
+    }
+
+    function hideAllSidebars() {
+      const sidebars = ["sidebar1", "sidebar2", "sidebar3"];
+      sidebars.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add("hidden");
+      });
+    }
+
+    function toggleSidebar1() {
+      hideAllSidebars();
+      const sidebar1 = document.getElementById("sidebar1");
+      const content = document.getElementById("content");
+      sidebar1.classList.toggle("hidden");
+      content.classList.toggle("full");
+    }
+
+    function toggleSidebar2() {
+      hideAllSidebars();
+      const sidebar2 = document.getElementById("sidebar2");
+      const content = document.getElementById("content");
+      sidebar2.classList.toggle("hidden");
+      content.classList.toggle("full");
+    }
+
+    function toggleSidebar3() {
+      hideAllSidebars();
+      const sidebar3 = document.getElementById("sidebar3");
+      const content = document.getElementById("content");
+      sidebar3.classList.toggle("hidden");
+      content.classList.toggle("full");
+    }
+
+
+
+
+
+    function loadPage(url) {
+      document.getElementById("webview").src = url;
+    }
+  </script>
+</body>
+
+</html>

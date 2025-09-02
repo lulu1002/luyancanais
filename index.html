@@ -20,33 +20,33 @@
   <div class="sidebar hidden" id="sidebar1">
     <div class="menu">
       <button id="voltar1" onclick="hideAllSidebars()">Voltar</button>
-      <a onclick="loadPage('https://embedcanaistv.com/premiereclubes/')">premiere 1</a>
-      <a onclick="loadPage('https://embedcanaistv.com/premiere2/')">premiere 2</a>
-      <a onclick="loadPage('https://embedcanaistv.com/premiere3/')">premiere 3</a>
-      <a onclick="loadPage('https://embedcanaistv.com/premiere4/')">premiere 4</a>
-      <a onclick="loadPage('https://embedcanaistv.com/premiere5/')">premiere 5</a>
-      <a onclick="loadPage('https://embedcanaistv.com/premiere6/')">premiere 6</a>
-      <a onclick="loadPage('https://embedcanaistv.com/premiere7/')">premiere 7</a>
-      <a onclick="loadPage('https://embedcanaistv.com/premiere8/')">premiere 8</a>
+      <a onclick="loadPage('https://embedcanais.com/premiere/')">premiere 1</a>
+      <a onclick="loadPage('https://embedcanais.com/premiere2/')">premiere 2</a>
+      <a onclick="loadPage('https://embedcanais.com/premiere3/')">premiere 3</a>
+      <a onclick="loadPage('https://embedcanais.com/premiere4/')">premiere 4</a>
+      <a onclick="loadPage('https://embedcanais.com/premiere5/')">premiere 5</a>
+      <a onclick="loadPage('https://embedcanais.com/premiere6/')">premiere 6</a>
+      <a onclick="loadPage('https://embedcanais.com/premiere7/')">premiere 7</a>
+      <a onclick="loadPage('https://embedcanais.com/premiere8/')">premiere 8</a>
     </div>
   </div>
   <div class="sidebar hidden" id="sidebar2">
     <div class="menu">
       <button id="voltar2" onclick="hideAllSidebars()">Voltar</button>
-      <a onclick="loadPage('https://embedcanaistv.com/sportv/')">sportv 1</a>
-      <a onclick="loadPage('https://embedcanaistv.com/sportv2/')">sportv 2</a>
-      <a onclick="loadPage('https://embedcanaistv.com/sportv3/')">sportv 3</a>
+      <a onclick="loadPage('https://embedcanais.com/sportv/')">sportv 1</a>
+      <a onclick="loadPage('https://embedcanais.com/sportv2/')">sportv 2</a>
+      <a onclick="loadPage('https://embedcanais.com/sportv3/')">sportv 3</a>
     </div>
   </div>
   <div class="sidebar hidden" id="sidebar3">
     <div class="menu">
       <button id="voltar3" onclick="hideAllSidebars()">Voltar</button>
-      <a onclick="loadPage('https://embedcanaistv.com/espn/')">espn 1</a>
-      <a onclick="loadPage('https://embedcanaistv.com/espn2/')">espn 2</a>
-      <a onclick="loadPage('https://embedcanaistv.com/espn3/')">espn 3</a>
-      <a onclick="loadPage('https://embedcanaistv.com/espn4/')">espn 4</a>
-      <a onclick="loadPage('https://embedcanaistv.com/espn5/')">espn 5</a>
-      <a onclick="loadPage('https://embedcanaistv.com/espn6/')">espn 6</a>
+      <a onclick="loadPage('https://embedcanais.com/espn/')">espn 1</a>
+      <a onclick="loadPage('https://embedcanais.com/espn2/')">espn 2</a>
+      <a onclick="loadPage('https://embedcanais.com/espn3/')">espn 3</a>
+      <a onclick="loadPage('https://embedcanais.com/espn4/')">espn 4</a>
+      <a onclick="loadPage('https://embedcanais.com/espn5/')">espn 5</a>
+      <a onclick="loadPage('https://embedcanais.com/espn6/')">espn 6</a>
 
     </div>
   </div>
@@ -54,16 +54,20 @@
   <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
 
   <div class="content full" id="content">
-    <iframe allow="fullscreen" allow="autoplay; encrypted-media" id="webview" src=""></iframe>
+    <iframe style="widht:100%;" allow="fullscreen" allow="autoplay; encrypted-media" id="webview" src=""></iframe>
   </div>
 
   <script>
+    
+    content.classList.toggle("full");
+    const content = document.getElementById("content");
+	
     function toggleSidebar() {
       const sidebar = document.getElementById("sidebar");
       const content = document.getElementById("content");
 
       sidebar.classList.toggle("hidden");
-      content.classList.toggle("full");
+      
 
 
 
@@ -73,7 +77,7 @@
       const content = document.getElementById("content");
 
       sidebar1.classList.toggle("hidden");
-      content.classList.toggle("full");
+      
 
     }
     function toggleSidebar2() {
@@ -81,7 +85,7 @@
       const content = document.getElementById("content");
 
       sidebar2.classList.toggle("hidden");
-      content.classList.toggle("full");
+      
     }
     function toggleSidebar3() {
       const sidebar3 = document.getElementById("sidebar3");
